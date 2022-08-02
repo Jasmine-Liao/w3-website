@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1.5;
 }
 ol, ul {
 	list-style: none;
@@ -58,7 +58,7 @@ img{
     vertical-align: middle;
 }
 .container{
-    max-width: 1326px;
+    max-width: 1320px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -90,6 +90,7 @@ h1 .logo{
     justify-content: space-between;
 }
 .menu-list a{
+    display: block;
     font-size: 20px;
     line-height: 30px;
 }
@@ -142,21 +143,24 @@ a{
 .footer{
     padding: 60px 0 32px;
 }
-.footer-list{
+.footer-list-t{
     display: flex;
     justify-content: space-between;
-    padding-bottom: 32px;
-    border-bottom: 1px solid #fff
+    align-items: center;
+    margin-bottom: 36px;
 }
 .footer-menu{
     width: 464px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 36px;
 }
 .footer-menu a{
     font-size: 16px;
-    line-height: 24px;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
 }
 .contact a{
     font-size: 36px;
@@ -183,6 +187,8 @@ a{
 }
 .footer-copyright{
     padding-top: 32px;
+    margin-top: 24px;
+    border-top: 1px solid #fff;
     display: flex;
     justify-content: space-between;
 }
@@ -200,6 +206,11 @@ a{
     .footer{
         padding: 24px 0;
     }
+    .footer-list{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
     .footer-menu{
         display: none;
     }
@@ -209,8 +220,15 @@ a{
     .social img{
         width: 24px;
         height: 24px;
+        margin-left: 8px;
     }
     .material-symbols-outlined{
+        margin-right: 10px;
+    }
+    .fs-call{
+        font-size: 20px;
+    }
+    .fs-mail{
         font-size: 18px;
     }
     .contact a{
@@ -219,6 +237,8 @@ a{
     }
     .footer-copyright{
         flex-direction: column;
+        margin-top: 16px;
+        padding-top: 16px;
     }
     .footer p{
         margin-bottom: 8px;
